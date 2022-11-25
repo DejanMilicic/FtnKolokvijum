@@ -60,8 +60,6 @@ int vezba12a() {
 			printf("Aritmeticka sredina je: %lf", as);
 		}
 		else printf("Nema brojeva deljivih sa 3.");
-
-		return 0;
-
 	}
+	return 0;
 }

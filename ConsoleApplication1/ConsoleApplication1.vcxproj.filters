@@ -54,6 +54,24 @@
     <ClCompile Include="vezba13.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="vezba14.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vezba15.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vezba16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vezba17_a,b,c,d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vezba18.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vezba19.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vezbe.h">
