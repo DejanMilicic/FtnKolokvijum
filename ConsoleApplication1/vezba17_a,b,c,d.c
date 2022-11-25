@@ -206,3 +206,12 @@ int vezba17d() {
 	return 0;
 }
 
+
+/*vezba 6: Написати програм за унос 2 целобројне матрице димензија n x n. Izracunaj sr. vr. svih el. matr. */
+
+int vezba17e() {
+
+
+
+	return 0;
+}
