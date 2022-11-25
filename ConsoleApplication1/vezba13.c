@@ -12,7 +12,7 @@ int vezba13() {
 	while (1) {
 		printf("Unesite duzinu vektora: ");
 		scanf_s("%d", &n);
-		if (n<=0 || n>50) break;
+		if (n <= 0 || n > 50) break;
 
 		printf("Unesite komponente prvog vektora: ");
 		for (int i = 0; i < n; i++) {
@@ -24,7 +24,7 @@ int vezba13() {
 			scanf_s("%lf", &b[i]);
 		}
 
-		//skalarni vektor
+		//skalarni proizvod
 		double sp = 0;
 		for (int i = 0; i < n; i++) {
 			sp += a[i] * b[i];
@@ -40,18 +40,26 @@ int vezba13() {
 		}
 		intenzitetA = sqrt(temp1);
 
-		printf("Intenzitet vektora a je %lf", intenzitetA);
+		printf("Intenzitet vektora a je %.3lf\n", intenzitetA);
 
 		double intenzitetB = 0;
 		double temp2 = 0;
 		for (int i = 0; i < n; i++) {
 			temp2 += (b[i] * b[i]);
 		}
-		intenzitetA = sqrt(temp2);
+		intenzitetB = sqrt(temp2);
 
-		printf("Intenzitet vektora a je %lf", intenzitetA);
+		printf("Intenzitet vektora b je %.3lf\n\n", intenzitetB);
+
+		//ugao vektora
+		double y;
+		double x = sp / (intenzitetA * intenzitetB);
+		y = cos(x);
+		x = acos(y);
+
+		printf("Ugao vektora je: %lf", y);
+		printf("\n\n");
 	}
-	printf("\n\n");
 
 	return 0;
 }

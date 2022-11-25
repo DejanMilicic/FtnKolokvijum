@@ -210,8 +210,31 @@ int vezba17d() {
 /*vezba 6: Написати програм за унос 2 целобројне матрице димензија n x n. Izracunaj sr. vr. svih el. matr. */
 
 int vezba17e() {
+	int n;
+	int a[N_MAX][N_MAX];
 
+	while (1) {
+		printf("Unesite dimenziju matrice: ");
+		scanf_s("%d", &n);
+		if (n <= 0 || n > N_MAX) break;
 
+		printf("Unesite: \n");
+		for (int i = 0; i < n; i++) {
+			printf("%d. vrstu: ", i + 1);
+			for (int j = 0; j < n; j++) {
+				scanf_s("%d", &a[i][j]);
+			}
+		}
+
+		double s = 0, sv=0;
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				s += a[i][j];  //suma
+			}
+		}
+		
+		printf("Srednja vrednost svih clanova matrice je: %.2lf \n\n", sv);
+	}
 
 	return 0;
 }
