@@ -51,13 +51,12 @@ int vezba13() {
 
 		printf("Intenzitet vektora b je %.3lf\n\n", intenzitetB);
 
-		//ugao vektora
-		double y;
-		double x = sp / (intenzitetA * intenzitetB);
-		y = cos(x);
-		x = acos(y);
+		//ugao vektora --> cos(ugla)=skalarni proizvod/proizvod intenziteta
+		double ugao;
+		double y = sp / (intenzitetA * intenzitetB);
+		ugao = acos(y);
 
-		printf("Ugao vektora je: %lf", y);
+		printf("Ugao vektora je: %lf", ugao);
 		printf("\n\n");
 	}
 
@@ -86,8 +85,13 @@ int vezba13a() {
 		c[1] = (a[2] * b[0] - a[0] * b[2]);
 		c[2] = (a[0] * b[1] - a[1] * b[0]);
 		
-		printf("Vektorski proizvod je: (%d,%d,%d)", c[0], c[1], c[2]);
+		printf("\nVektorski proizvod je: (%d,%d,%d)", c[0], c[1], c[2]);
 
+
+		//povrsina paralelograma (povrsina je jednaka intenzitetu vektorskog proizvoda)
+		double s = c[0] * c[0] + c[1] * c[1] + c[2] * c[2];
+		double P = sqrt(s);
+		printf("\nPovrsina paralelograma je: %lf", P);
 
 	return 0;
 }
