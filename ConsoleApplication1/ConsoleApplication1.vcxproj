@@ -139,6 +139,10 @@
     <ClCompile Include="vezba18.c" />
     <ClCompile Include="vezba19.c" />
     <ClCompile Include="vezba2.c" />
+    <ClCompile Include="vezba20.c" />
+    <ClCompile Include="vezba21.c" />
+    <ClCompile Include="vezba22.c" />
+    <ClCompile Include="vezba23.c" />
     <ClCompile Include="vezba3.c" />
     <ClCompile Include="vezba4.c" />
     <ClCompile Include="vezba5.c" />

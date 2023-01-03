@@ -72,6 +72,18 @@
     <ClCompile Include="vezba19.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="vezba20.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vezba21.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vezba22.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vezba23.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vezbe.h">

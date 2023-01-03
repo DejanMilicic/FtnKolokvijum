@@ -51,6 +51,7 @@ int vezba13() {
 
 		printf("Intenzitet vektora b je %.3lf\n\n", intenzitetB);
 
+
 		//ugao vektora --> cos(ugla)=skalarni proizvod/proizvod intenziteta
 		double ugao;
 		double y = sp / (intenzitetA * intenzitetB);
@@ -59,7 +60,6 @@ int vezba13() {
 		printf("Ugao vektora je: %lf", ugao);
 		printf("\n\n");
 	}
-
 	return 0;
 }
 

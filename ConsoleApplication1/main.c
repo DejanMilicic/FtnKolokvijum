@@ -17,10 +17,12 @@ int main()
     //vezba10();
     //vezba11();
     //vezba12a();
-    vezba13();
+    //vezba13();
     //vezba13a();
     //vezba14();
+    //vezba14_1();
     //vezba15();
+    vezba15_1();
     //vezba16();
     //vezba17();
     //vezba17a();
@@ -30,5 +32,11 @@ int main()
     //vezba17e();
     //vezba18();
     //vezba19();
+    //vezba20();
+    //vezba21();
+    //vezba21_2();
+    //vezba22();
+    //vezba22_2();
+    //vezba22_3();
     //printf("Hello World from main!\n");
 }
