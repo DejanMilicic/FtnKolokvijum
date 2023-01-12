@@ -101,7 +101,7 @@ int vezba15_1() {
 
 		printf("Izmenjen niz glasi: ");
 		for (int* ptr = niz; ptr < niz + n; ptr++) {
-			printf("%d\t", *ptr);  // kad ide *ptr a kad samo ptr
+			printf("%d\t", *ptr); 
 		}
 		printf("\n\n");
 	}

@@ -53,38 +53,3 @@ int vezba19() {
 
 	return 0; 
 }
-// NE RADI
-
-
-
-
-/*
-int main() {
-
-	while (1) {
-		int Nmax = 5;
-		int BrKol, BrRed;
-
-		printf("Unesite duzinu kolona: ");
-		scanf_s("%d", &BrKol);
-		printf("Unesite duzinu vrsta: ");
-		scanf_s("%d", &BrRed);
-		if (BrKol<0 || BrKol>Nmax || BrRed<0 || BrRed>Nmax) break;
-
-
-		printf("Unesite elemente matrice: ");
-		int** matrica = (int**)malloc(BrRed * sizeof(int*));
-			for (int i = 0; i < BrRed; i++) {
-				int* matrica[i] = (int)malloc(BrKol * sizeof(int));   //matrica[i]??
-				for (int j = 0; j < BrKol; j++) {
-					scanf_s("%d");
-				}
-			}
-
-		printf("Unesite elemente matrice: ");
-		scanf_s("%d", El);
-
-	}
-
-}
-*/

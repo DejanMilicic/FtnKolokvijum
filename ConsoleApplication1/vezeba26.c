@@ -40,15 +40,28 @@ int** SkalarMatrica(int s, int**matrica1, int dim) {
 	return skalarmatrica;
 }
 
-double SrednjaVrednost(int dim, int** matrica1) {
-	int srednjavr = 0;
+double SrednjaVrednost(int dim, int** matrica) {
+	double suma = 0;
+	double srednjavr;
 	for (int i = 0; i < dim; i++) {
 		for (int j = 0; j < dim; j++) {
-			srednjavr = (srednjavr + matrica1[i][j]) / (dim*dim);
+			suma = (suma + matrica[i][j]);
+			srednjavr = suma / (dim * dim);
 		}
 	}
 	return srednjavr;
 }
+
+int NajmanjiEl(int dim, int** matrica) {
+	int min = matrica[1][1];
+	for (int i = 0; i < dim; i++) {
+		for (int j = 0; j < dim; j++) {
+			if (min > matrica[i][j]) min = matrica[i][j];
+		}
+	}
+	return min;
+}
+
 
 void IspisMatrice(int dim, int** matrica) {
 	for (int i = 0; i < dim; i++) {
@@ -91,11 +104,14 @@ int vezba26() {
 		int** skalarmatrice2 = SkalarMatrica(s, matrica2, dim);
 		IspisMatrice(dim, skalarmatrice2);
 
-		printf("Srednja vrednost matrice je: %lf", SrednjaVrednost(dim, matrica1));
+		printf("Srednja vrednost prve matrice je: %lf", SrednjaVrednost(dim, matrica1));
+		printf("\nSrednja vrednost druge matrice je: %lf", SrednjaVrednost(dim, matrica2));
+
+		printf("\nNajmanji element matrice je: %d", NajmanjiEl(dim, matrica1));
+		printf("\nNajmanji element matrice je: %d", NajmanjiEl(dim, matrica2));
 
 
-
-		printf("\n\n");
+		printf("\n\n\n");
 	}
 
 	return 0;

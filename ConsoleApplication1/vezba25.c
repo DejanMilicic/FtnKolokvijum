@@ -21,11 +21,6 @@ int vezba25() {
 	return 0;
 }
 
-//POVRSINA TROUGLA PREKO KOORDINATA TACAKA
-
-
-
-
 //swap primer
 void swap(int* a, int* b) {
 	int temp = *b;
