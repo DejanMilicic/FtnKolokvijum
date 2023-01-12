@@ -34,3 +34,7 @@ int vezba22();
 int vezba22_2();
 int vezba22_3();
 int vezba23();
+int vezba24();
+int vezba25();
+int vezba25_1();
+int vezba26();

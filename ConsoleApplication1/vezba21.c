@@ -1,4 +1,4 @@
-// zadatak 21_1: Prebrojavanje broja cifara koje se pojavlvjuju u jednocifrenom nizu
+// zadatak 21_1: Prebrojavanje broja cifara koje se pojavljuju u jednocifrenom nizu
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

@@ -143,6 +143,8 @@
     <ClCompile Include="vezba21.c" />
     <ClCompile Include="vezba22.c" />
     <ClCompile Include="vezba23.c" />
+    <ClCompile Include="vezba24.c" />
+    <ClCompile Include="vezba25.c" />
     <ClCompile Include="vezba3.c" />
     <ClCompile Include="vezba4.c" />
     <ClCompile Include="vezba5.c" />
@@ -150,6 +152,7 @@
     <ClCompile Include="vezba7.c" />
     <ClCompile Include="vezba8.c" />
     <ClCompile Include="vezba9.c" />
+    <ClCompile Include="vezeba26.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vezbe.h" />

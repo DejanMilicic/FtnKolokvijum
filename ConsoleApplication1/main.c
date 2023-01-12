@@ -22,7 +22,7 @@ int main()
     //vezba14();
     //vezba14_1();
     //vezba15();
-    vezba15_1();
+    //vezba15_1();
     //vezba16();
     //vezba17();
     //vezba17a();
@@ -38,5 +38,10 @@ int main()
     //vezba22();
     //vezba22_2();
     //vezba22_3();
+    //vezba23();
+    //vezba24();
+    //vezba25();
+    //vezba25_1();
+    vezba26();
     //printf("Hello World from main!\n");
 }

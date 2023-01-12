@@ -18,7 +18,7 @@ int vezba20() {
 		scanf_s("%i", &niz[i]);
 	}
 
-	for (int i = 0;i < brojElemenata;i++)
+	for (int i = 0;i < brojElemenata;i++) {
 		for (int j = i;j < brojElemenata;j++)
 		{
 			if (niz[i] > niz[j])
@@ -28,6 +28,7 @@ int vezba20() {
 				niz[j] = temp;
 			}
 		}
+	}
 
 	printf("Sortiran niz je \n");
 	for (int i = 0;i < brojElemenata;i++)
@@ -52,9 +53,9 @@ int vezba14_1() {
 		scanf_s("%d", &n);
 		if (n <= 0 || n > maxNiz) break;
 
-		int* niz = (int*)malloc(n * sizeof(int));
+		int *niz = (int*)malloc(n * sizeof(int));
 
-		for (int* ptr = niz; ptr < (niz+n); ptr++) {
+		for (int* ptr = niz; ptr < (niz+n); ptr++) { 
 			printf("Unesi clan niza:");
 			scanf_s("%d", ptr);   //scanf prima pointer
 		}
@@ -92,7 +93,7 @@ int vezba15_1() {
 			scanf_s("%d", ptr);
 		}
 
-		for (int *p = niz, *q = niz+n-1; p < q; p++, q--) {
+		for (int *p = niz, *q = niz+n-1; p < q; p++, q--) {  //niz+n-1 je poslednji element u nizu
 			int temp = *p;
 			*p = *q;
 			*q = temp;
@@ -100,7 +101,7 @@ int vezba15_1() {
 
 		printf("Izmenjen niz glasi: ");
 		for (int* ptr = niz; ptr < niz + n; ptr++) {
-			printf("%d\t", *ptr);
+			printf("%d\t", *ptr);  // kad ide *ptr a kad samo ptr
 		}
 		printf("\n\n");
 	}
