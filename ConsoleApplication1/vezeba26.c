@@ -5,7 +5,7 @@
 #define _CRT_SECURE_NO_WARNINGS_
 
 int** UnosMatrice(int dim) {
-	int** matrica = (int**)malloc(dim * sizeof(int));
+	int** matrica = (int**)malloc(dim * sizeof(int*));
 
 	for (int i = 0; i < dim; i++) {
 		matrica[i] = (int*)malloc(dim * sizeof(int));
@@ -18,7 +18,7 @@ int** UnosMatrice(int dim) {
 }
 
 int** Sabiranje(int** matrica1, int** matrica2, int dim) {
-	int** zbir = (int**)malloc(dim * sizeof(int));
+	int** zbir = (int**)malloc(dim * sizeof(int*));
 
 	for (int i = 0; i < dim; i++) {
 		zbir[i] = (int*)malloc(dim * sizeof(int));
@@ -30,7 +30,7 @@ int** Sabiranje(int** matrica1, int** matrica2, int dim) {
 }
 
 int** SkalarMatrica(int s, int**matrica1, int dim) {
-	int** skalarmatrica = (int**)malloc(dim * sizeof(int));
+	int** skalarmatrica = (int**)malloc(dim * sizeof(int*));
 	for (int i = 0; i < dim; i++) {
 		skalarmatrica[i] = (int*)malloc(dim * sizeof(int));
 		for (int j = 0; j < dim; j++) {
@@ -53,7 +53,7 @@ double SrednjaVrednost(int dim, int** matrica) {
 }
 
 int NajmanjiEl(int dim, int** matrica) {
-	int min = matrica[1][1];
+	int min = matrica[0][0];
 	for (int i = 0; i < dim; i++) {
 		for (int j = 0; j < dim; j++) {
 			if (min > matrica[i][j]) min = matrica[i][j];
@@ -62,7 +62,6 @@ int NajmanjiEl(int dim, int** matrica) {
 	return min;
 }
 
-
 void IspisMatrice(int dim, int** matrica) {
 	for (int i = 0; i < dim; i++) {
 		for (int j = 0; j < dim; j++) {
@@ -70,6 +69,14 @@ void IspisMatrice(int dim, int** matrica) {
 		}
 		printf("\n");
 	}
+}
+
+void FreeMatrica(int dim, int** matrica) {
+
+	for (int i = 0; i < dim; i++) {
+		free(matrica[i]);
+	}
+	free(matrica);
 }
 
 
@@ -107,8 +114,14 @@ int vezba26() {
 		printf("Srednja vrednost prve matrice je: %lf", SrednjaVrednost(dim, matrica1));
 		printf("\nSrednja vrednost druge matrice je: %lf", SrednjaVrednost(dim, matrica2));
 
-		printf("\nNajmanji element matrice je: %d", NajmanjiEl(dim, matrica1));
-		printf("\nNajmanji element matrice je: %d", NajmanjiEl(dim, matrica2));
+		printf("\nNajmanji element prve matrice je: %d", NajmanjiEl(dim, matrica1));
+		printf("\nNajmanji element druge matrice je: %d", NajmanjiEl(dim, matrica2));
+
+		FreeMatrica(dim, matrica1);
+		FreeMatrica(dim, matrica2);
+		FreeMatrica(dim, zbir);
+		FreeMatrica(dim, skalarmatrice1);
+		FreeMatrica(dim, skalarmatrice2);
 
 
 		printf("\n\n\n");

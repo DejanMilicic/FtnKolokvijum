@@ -39,9 +39,9 @@ int main()
     //vezba22_2();
     //vezba22_3();
     //vezba23();
-    //vezba24();
+    vezba24();
     //vezba25();
     //vezba25_1();
-    vezba26();
+    //vezba26();
     //printf("Hello World from main!\n");
 }
